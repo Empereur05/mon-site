@@ -11,8 +11,21 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#111111">
+  <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
 </head>
 <body>
-<p class="p1"><span class="s1">hello3</span></p>
+<body>
+    <h1>IPTV Player (MKV Support)</h1>
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="360">
+        <source src="http://30915-lined.cdn-o2.me:80/movie/2196efff19/189f87231db8/906259.mkv" type="video/webm">
+        <!-- Fallback -->
+        Votre navigateur ne supporte pas ce format vidéo.
+    </video>
+
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script>
+        var player = videojs('my-video');
+    </script>
+</body>
 </body>
 </html>
